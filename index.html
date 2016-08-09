@@ -30,9 +30,25 @@
         <div class="dashboard-header">
           <div class="dashboar-header__item">
             <button class="trigger-search dashboar-header__control" type="button">Поиск</button>
+            <form class="search-form" action="" method="GET">
+              <input type="search" name="q" placeholder="Что ищем?">
+            </form>
           </div>
           <div class="user-block dashboar-header__item">
             <a class="login dashboar-header__control" href="#">Вход</a>
+            <form class="login-form" action="" method="POST">
+              <input type="email" name="login" required placeholder="Электронная почта">
+              <input type="password" name="password" required placeholder="Пароль">
+              <div class="login-form__footer">
+                <div class="login-form__column-left">
+                  <button class="button" type="submit">Войти</button>
+                </div>
+                <div class="login-form__column-right">
+                  <a href="#">Забыли пароль</a>
+                  <a href="#">Новая регистрация</a>
+                </div>
+              </div>
+            </form>
           </div>
           <div class="dashboar-header__item">
             <a class="trigger-cart dashboar-header__control" href="#">Пусто</a>
@@ -45,39 +61,39 @@
       </div>
     </header>
 
-    <section class="slider container">
-      <div class="slider__content">
-        <figure>
-          <img src="http://placehold.it/647x584" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
-          <figcaption>Крем-брюле и пломбир<br>
-          с малиновым джемом</figcaption>
-        </figure>
-        <figure>
-          <img src="http://placehold.it/644x582" width="644" height="582" alt="Шоколадный пломбир и лимонный сорбет">
-          <figcaption>Шоколадный пломбир<br>
-          и лимонный сорбет</figcaption>
-        </figure>
-        <figure>
-          <img src="http://placehold.it/639x582" width="639" height="582" alt="Пломбир с помадкой и клубничный щербет">
-          <figcaption>Пломбир с помадкой<br>
-          и клубничный щербет</figcaption>
-        </figure>
-      </div>
-      <ol class="slider__controls">
-        <li>
-          <button type="button"></button>
-        </li>
-        <li>
-          <button type="button"></button>
-        </li>
-        <li>
-          <button type="button"></button>
-        </li>
-      </ol>
-      <a class="button" href="#">Давайте оба</a>
-    </section>
+    <main class="container">
+      <section class="slider">
+        <div class="slider__content">
+          <figure>
+            <img src="http://placehold.it/647x584" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
+            <figcaption>Крем-брюле и пломбир<br>
+            с малиновым джемом</figcaption>
+          </figure>
+          <figure>
+            <img src="http://placehold.it/644x582" width="644" height="582" alt="Шоколадный пломбир и лимонный сорбет">
+            <figcaption>Шоколадный пломбир<br>
+            и лимонный сорбет</figcaption>
+          </figure>
+          <figure>
+            <img src="http://placehold.it/639x582" width="639" height="582" alt="Пломбир с помадкой и клубничный щербет">
+            <figcaption>Пломбир с помадкой<br>
+            и клубничный щербет</figcaption>
+          </figure>
+        </div>
+        <ol class="slider__controls">
+          <li>
+            <button type="button"></button>
+          </li>
+          <li>
+            <button type="button"></button>
+          </li>
+          <li>
+            <button type="button"></button>
+          </li>
+        </ol>
+        <a class="button" href="#">Давайте оба</a>
+      </section>
 
-    <div class="container">
       <div class="grid">
         <div class="column-2">
           <div class="promo promo_jam">
@@ -95,68 +111,66 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <section class="hits container">
-      <div class="grid">
-        <div class="column-1">
-          <article class="product product_hit">
-            <div class="product__box-wrapper">
-              <img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-              <div class="product__price">
-                <b>310 ₽</b>/кг
+      <section class="hits">
+        <div class="grid">
+          <div class="column-1">
+            <article class="product product_hit">
+              <div class="product__box-wrapper">
+                <img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <div class="product__price">
+                  <b>310 ₽</b>/кг
+                </div>
               </div>
-            </div>
-            <h2 class="product__name"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h2>
-          </article>
-        </div>
-        <div class="column-1">
-          <article class="product product_hit">
-            <div class="product__box-wrapper">
-              <img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-              <div class="product__price">
-                <b>380 ₽</b>/кг
+              <h2 class="product__name"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h2>
+            </article>
+          </div>
+          <div class="column-1">
+            <article class="product product_hit">
+              <div class="product__box-wrapper">
+                <img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+                <div class="product__price">
+                  <b>380 ₽</b>/кг
+                </div>
               </div>
-            </div>
-            <h2 class="product__name"><a href="#">Сливочно-кофейное с кусочками шоколада</a></h2>
-          </article>
-        </div>
-        <div class="column-1">
-          <article class="product product_hit">
-            <div class="product__box-wrapper">
-              <img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-              <div class="product__price">
-                <b>355 ₽</b>/кг
+              <h2 class="product__name"><a href="#">Сливочно-кофейное с кусочками шоколада</a></h2>
+            </article>
+          </div>
+          <div class="column-1">
+            <article class="product product_hit">
+              <div class="product__box-wrapper">
+                <img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                <div class="product__price">
+                  <b>355 ₽</b>/кг
+                </div>
               </div>
-            </div>
-            <h2 class="product__name"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h2>
-          </article>
-        </div>
-        <div class="column-1">
-          <article class="product product_hit">
-            <div class="product__box-wrapper">
-              <img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-              <div class="product__price">
-                <b>415 ₽</b>/кг
+              <h2 class="product__name"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h2>
+            </article>
+          </div>
+          <div class="column-1">
+            <article class="product product_hit">
+              <div class="product__box-wrapper">
+                <img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+                <div class="product__price">
+                  <b>415 ₽</b>/кг
+                </div>
               </div>
-            </div>
-            <h2 class="product__name"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h2>
-          </article>
+              <h2 class="product__name"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h2>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="features container">
-      <p><em>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</em></p>
-      <ul class="features-list">
-        <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-        <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-        <li>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-        <li>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
-      </ul>
-    </section>
+      <section class="features">
+        <p><em>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</em></p>
+        <ul class="features-list">
+          <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+          <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+          <li>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+          <li>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+        </ul>
+      </section>
 
-    <div class="container">
       <div class="grid">
         <div class="column-2">
           <section class="news-preview">
@@ -180,7 +194,7 @@
           </section>
         </div>
       </div>
-    </div>
+    </main>
 
     <section class="contacts">
       <div class="contacts-map" id="contacts-map"></div>
@@ -194,5 +208,39 @@
       </div>
     </section>
 
+    <footer class="main-footer container">
+      <ul class="socials-footer">
+        <li>
+          <a href="#">Twitter</a>
+        </li>
+        <li>
+          <a href="#">Instagram</a>
+        </li>
+        <li>
+          <a href="#">Facebook</a>
+        </li>
+        <li>
+          <a href="#">Вконтакте</a>
+        </li>
+      </ul>
+      <ul class="navigation-footer">
+        <li>
+          <a href="#">Для поставщиков</a>
+        </li>
+        <li>
+          <a href="#">О производстве</a>
+        </li>
+        <li>
+          <a href="#">Наши документы</a>
+        </li>
+        <li>
+          <a href="#">Экологические стандарты</a>
+        </li>
+      </ul>
+      <div class="developer-footer">
+        <img src="http://placehold.it/107x36" width="107" height="36" alt="">
+        <p>Сделано в <a href="#">HTML Academy</a> © 2016</p>
+      </div>
+    </footer>
   </body>
 </html>
