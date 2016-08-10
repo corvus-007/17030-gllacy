@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Глейси | Каталог</title>
+  </head>
+  <body>
+    <header class="main-header container">
+      <div class="main-header__column-left">
+        <div class="logo">
+          <img src="http://placehold.it/153x63" width="153" height="63" alt="Глейси">
+        </div>
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">Каталог</a>
+              <ul>
+                <li>
+                  <a href="#">Новинки</a>
+                </li>
+                <li>
+                  <a href="#">Сливочное</a>
+                </li>
+                <li>
+                  <a href="#">Щербеты</a>
+                </li>
+                <li>
+                  <a href="#">Фруктовый лед</a>
+                </li>
+                <li>
+                  <a href="#">Мелорин</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Доставка и оплата</a>
+            </li>
+            <li>
+              <a href="#">О компании</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="main-header__column-right">
+        <div class="dashboard-header">
+          <div class="dashboar-header__item">
+            <button class="trigger-search dashboar-header__control" type="button">Поиск</button>
+            <form class="search-form" action="" method="GET">
+              <input type="search" name="q" placeholder="Что ищем?">
+            </form>
+          </div>
+          <div class="user-block dashboar-header__item">
+            <a class="login dashboar-header__control" href="#">Вход</a>
+            <form class="login-form" action="" method="POST">
+              <input type="email" name="login" required placeholder="Электронная почта">
+              <input type="password" name="password" required placeholder="Пароль">
+              <div class="login-form__footer">
+                <div class="login-form__column-left">
+                  <button class="button" type="submit">Войти</button>
+                </div>
+                <div class="login-form__column-right">
+                  <a href="#">Забыли пароль</a>
+                  <a href="#">Новая регистрация</a>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="dashboar-header__item">
+            <a class="trigger-cart dashboar-header__control" href="#">Пусто</a>
+          </div>
+        </div>
+        <p class="phone-header">
+          С 10 до 20, ежедневно
+          <span>8 812 450-25-25</span>
+        </p>
+      </div>
+    </header>
+
+    <main class="container">
+      <ul class="breadcrumbs">
+        <li>
+          <a href="#">Главная</a>
+        </li>
+        <li>
+          <a href="#">Каталог</a>
+        </li>
+        <li>
+          <span>Сливочное</span>
+        </li>
+      </ul>
+      <h1>Сливочное мороженое</h1>
+      <form class="filter-form" action="" method="GET">
+        <div>
+          <fieldset>
+            <legend>Сортировка</legend>
+            <select name="sort">
+              <option value="popularity">по популярности</option>
+              <option value="price">по цене</option>
+              <option value="fat">по жирности</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>Цена: 100 руб. – 500 руб.</legend>
+            <div class="form-panel">
+              <div class="range">
+                <input type="range" name="" id=""> <!-- Временно -->
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Жирность</legend>
+            <div class="form-panel">
+              <input type="radio" name="fat" id="fat-field-0" value="0">
+              <label for="fat-field-0">0%</label>
+              <input type="radio" name="fat" id="fat-field-to10" value="to10">
+              <label for="fat-field-to10">до 10%</label>
+              <input type="radio" name="fat" id="fat-field-to30" value="to30">
+              <label for="fat-field-to30">до 30%</label>
+              <input type="radio" name="fat" id="fat-field-from30" value="from30">
+              <label for="fat-field-from30">выше 30%</label>
+            </div>
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <legend>Наполнители</legend>
+            <div class="form-panel">
+              <input type="checkbox" name="filler" id="filler-field-chocolate">
+              <label for="filler-field-chocolate">шоколадные</label>
+              <input type="checkbox" name="filler" id="filler-field-sugar">
+              <label for="filler-field-sugar">сахарные присыпки</label>
+              <input type="checkbox" name="filler" id="filler-field-fruit">
+              <label for="filler-field-fruit">фрукты</label>
+              <input type="checkbox" name="filler" id="filler-field-syrup">
+              <label for="filler-field-syrup">сиропы</label>
+              <input type="checkbox" name="filler" id="filler-field-jam">
+              <label for="filler-field-jam">джемы</label>
+            </div>
+          </fieldset>
+          <button class="button" type="submit">Применить</button>
+        </div>
+      </form>
+
+    </main>
+
+    <footer class="main-footer container">
+      <ul class="socials-footer">
+        <li>
+          <a href="#">Twitter</a>
+        </li>
+        <li>
+          <a href="#">Instagram</a>
+        </li>
+        <li>
+          <a href="#">Facebook</a>
+        </li>
+        <li>
+          <a href="#">Вконтакте</a>
+        </li>
+      </ul>
+      <ul class="navigation-footer">
+        <li>
+          <a href="#">Для поставщиков</a>
+        </li>
+        <li>
+          <a href="#">О производстве</a>
+        </li>
+        <li>
+          <a href="#">Наши документы</a>
+        </li>
+        <li>
+          <a href="#">Экологические стандарты</a>
+        </li>
+      </ul>
+      <div class="developer-footer">
+        <img src="http://placehold.it/107x36" width="107" height="36" alt="">
+        <p>Сделано в <a href="#">HTML Academy</a> © 2016</p>
+      </div>
+    </footer>
+  </body>
+</html>
