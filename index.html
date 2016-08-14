@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header container">
       <div class="main-header__column-left">
         <div class="logo">
-          <img src="http://placehold.it/153x63" width="153" height="63" alt="Глейси">
+          <img src="img/logo-site.svg" width="153" height="63" alt="Глейси">
         </div>
         <nav class="main-navigation">
           <ul>
@@ -46,28 +47,35 @@
         <div class="dashboard-header">
           <div class="dashboard-header__item">
             <button class="trigger-search dashboard-header__control" type="button">Поиск</button>
-            <form class="search-form" action="" method="GET">
-              <input type="search" name="q" placeholder="Что ищем?">
-            </form>
+            <div class="dropdown">
+              <form class="search-form" action="" method="GET">
+                <input type="search" name="q" placeholder="Что ищем?">
+              </form>
+            </div>
           </div>
           <div class="user-block dashboard-header__item">
             <a class="login dashboard-header__control" href="#">Вход</a>
-            <form class="login-form" action="" method="POST">
-              <input type="email" name="login" required placeholder="Электронная почта">
-              <input type="password" name="password" required placeholder="Пароль">
-              <div class="login-form__footer">
-                <div class="login-form__column-left">
-                  <button class="button" type="submit">Войти</button>
+            <div class="dropdown">
+              <form class="login-form" action="" method="POST">
+                <input type="email" name="login" required placeholder="Электронная почта">
+                <input type="password" name="password" required placeholder="Пароль">
+                <div class="login-form__footer">
+                  <div class="login-form__column-left">
+                    <button class="button" type="submit">Войти</button>
+                  </div>
+                  <div class="login-form__column-right">
+                    <a href="#">Забыли пароль</a>
+                    <a href="#">Новая регистрация</a>
+                  </div>
                 </div>
-                <div class="login-form__column-right">
-                  <a href="#">Забыли пароль</a>
-                  <a href="#">Новая регистрация</a>
-                </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
           <div class="dashboard-header__item">
             <a class="trigger-cart dashboard-header__control" href="#">Пусто</a>
+            <div class="dropdown">
+
+            </div>
           </div>
         </div>
         <p class="phone-header">
@@ -82,17 +90,17 @@
         <section class="slider">
           <div class="slider__content">
             <figure>
-              <img src="http://placehold.it/647x584" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
+              <img src="img/slider/01.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
               <figcaption>Крем-брюле и пломбир<br>
               с малиновым джемом</figcaption>
             </figure>
             <figure>
-              <img src="http://placehold.it/644x582" width="644" height="582" alt="Шоколадный пломбир и лимонный сорбет">
+              <img src="img/slider/02.png" width="644" height="582" alt="Шоколадный пломбир и лимонный сорбет">
               <figcaption>Шоколадный пломбир<br>
               и лимонный сорбет</figcaption>
             </figure>
             <figure>
-              <img src="http://placehold.it/639x582" width="639" height="582" alt="Пломбир с помадкой и клубничный щербет">
+              <img src="img/slider/03.png" width="639" height="582" alt="Пломбир с помадкой и клубничный щербет">
               <figcaption>Пломбир с помадкой<br>
               и клубничный щербет</figcaption>
             </figure>
@@ -133,7 +141,7 @@
           <div class="products-grid">
             <article class="product">
               <div class="product__box-wrapper">
-                <img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <img src="img/catalog/01.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 <div class="product__price">
                   <span>310 ₽</span>/кг
                 </div>
@@ -143,7 +151,7 @@
             </article>
             <article class="product">
               <div class="product__box-wrapper">
-                <img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+                <img src="img/catalog/02.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                 <div class="product__price">
                   <span>380 ₽</span>/кг
                 </div>
@@ -152,7 +160,7 @@
             </article>
             <article class="product">
               <div class="product__box-wrapper">
-                <img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                <img src="img/catalog/03.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                 <div class="product__price">
                   <span>355 ₽</span>/кг
                 </div>
@@ -162,7 +170,7 @@
             </article>
             <article class="product">
               <div class="product__box-wrapper">
-                <img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+                <img src="img/catalog/04.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
                 <div class="product__price">
                   <span>415 ₽</span>/кг
                 </div>
@@ -251,7 +259,7 @@
         </li>
       </ul>
       <div class="developer-footer">
-        <img src="http://placehold.it/107x36" width="107" height="36" alt="">
+        <img src="img/logo-developer.svg" width="107" height="36" alt="">
         <p>Сделано в <a href="#">HTML Academy</a> © 2016</p>
       </div>
     </footer>
