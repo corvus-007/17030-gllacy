@@ -1,11 +1,41 @@
 body {
+  margin: 0;
   font-size: 16px;
   line-height: 1.4;
   font-weight: normal;
   font-family: "Roboto", "Arial", "Helvetica", sans-serif;
   color: #fff;
+  /*background-color: #849d8f;*/
+}
+
+/*==============================
+=            Slider            =
+==============================*/
+
+input[id="slide-1"]:checked ~ .site-wrapper {
   background-color: #849d8f;
 }
+
+input[id="slide-2"]:checked ~ .site-wrapper {
+  background-color: #8996a6;
+}
+
+input[id="slide-3"]:checked ~ .site-wrapper {
+  background-color: #9d8b84;
+}
+
+.slider figure {
+  display: none;
+}
+
+input[id="slide-1"]:checked ~ .site-wrapper .slider figure:nth-child(1),
+input[id="slide-2"]:checked ~ .site-wrapper .slider figure:nth-child(2),
+input[id="slide-3"]:checked ~ .site-wrapper .slider figure:nth-child(3) {
+  display: block;
+}
+
+/*=====  End of Slider  ======*/
+
 
 h1, h2 {
   font-family: "Roboto", "Arial", "Helvetica", sans-serif;
