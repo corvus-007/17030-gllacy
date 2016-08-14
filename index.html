@@ -16,7 +16,7 @@
             <li>
               <a href="#">Каталог</a>
               <ul>
-                <li>
+                <li class="main-navigation__special-subitem">
                   <a href="#">Новинки</a>
                 </li>
                 <li>
@@ -56,8 +56,8 @@
           <div class="user-block dashboard-header__item">
             <a class="login dashboard-header__control" href="#">Вход</a>
             <div class="dropdown">
-              <form class="login-form" action="" method="POST">
-                <input type="email" name="login" required placeholder="Электронная почта">
+              <form class="login-form" name="login-form" action="" method="POST">
+                <input type="email" name="email" required placeholder="Электронная почта">
                 <input type="password" name="password" required placeholder="Пароль">
                 <div class="login-form__footer">
                   <div class="login-form__column-left">
@@ -107,13 +107,13 @@
           </div>
           <ol class="slider__controls">
             <li>
-              <button type="button"></button>
+              <button type="button">1</button>
             </li>
             <li>
-              <button type="button"></button>
+              <button type="button">2</button>
             </li>
             <li>
-              <button type="button"></button>
+              <button type="button">3</button>
             </li>
           </ol>
           <a class="button" href="#">Давайте оба</a>
@@ -122,7 +122,7 @@
         <div class="grid">
           <div class="column-2">
             <div class="promo promo_jam">
-              <h2>Малина даром!</h2>
+              <h2>Малинка даром!</h2>
               <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
               <a class="button" href="#">Хочу варенье!</a>
             </div>
@@ -141,7 +141,9 @@
           <div class="products-grid">
             <article class="product">
               <div class="product__box-wrapper">
-                <img src="img/catalog/01.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <div class="product__image-wrapper">
+                  <img src="img/catalog/01.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                </div>
                 <div class="product__price">
                   <span>310 ₽</span>/кг
                 </div>
@@ -151,7 +153,9 @@
             </article>
             <article class="product">
               <div class="product__box-wrapper">
-                <img src="img/catalog/02.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+                <div class="product__image-wrapper">
+                  <img src="img/catalog/02.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+                </div>
                 <div class="product__price">
                   <span>380 ₽</span>/кг
                 </div>
@@ -160,7 +164,9 @@
             </article>
             <article class="product">
               <div class="product__box-wrapper">
-                <img src="img/catalog/03.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                <div class="product__image-wrapper">
+                  <img src="img/catalog/03.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                </div>
                 <div class="product__price">
                   <span>355 ₽</span>/кг
                 </div>
@@ -170,7 +176,9 @@
             </article>
             <article class="product">
               <div class="product__box-wrapper">
-                <img src="img/catalog/04.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+                <div class="product__image-wrapper">
+                  <img src="img/catalog/04.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+                </div>
                 <div class="product__price">
                   <span>415 ₽</span>/кг
                 </div>
@@ -184,10 +192,22 @@
         <section class="features">
           <h2>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
           <ul class="features-list">
-            <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-            <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-            <li>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-            <li>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+            <li>
+              <span class="icon icon-icecream"></span>
+              Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+            </li>
+            <li>
+              <span class="icon icon-leaf"></span>
+              Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+            </li>
+            <li>
+              <span class="icon icon-cow"></span>
+              Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+            </li>
+            <li>
+              <span class="icon icon-thermometer"></span>
+              Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+            </li>
           </ul>
         </section>
 
@@ -196,7 +216,7 @@
             <section class="news-preview">
               <h2>Новое в нашем блоге</h2>
               <h3>
-                <a href="#">10 способов сервировки <br>
+                <a href="#">10 способов сервировки
                 фруктовых щербетов <br>
                 к столу</a>
               </h3>
@@ -206,7 +226,7 @@
             <section class="subscribe">
               <div class="subscribe__inner">
                 <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
-                <form class="subscribe-form" action="" method="POST">
+                <form class="subscribe-form" name="subscribe-form" action="" method="POST">
                   <input type="email" name="email" placeholder="Электронная почта">
                   <button class="button" type="submit">Отправить</button>
                 </form>
@@ -219,12 +239,12 @@
       <section class="contacts">
         <div class="contacts-map" id="contacts-map"></div>
         <div class="contacts-info">
-          <p>Адрес главного офиса и<br>
-          офлайн магазина: <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
+          <p>Адрес главного офиса и
+          офлайн&nbsp;магазина: <b>ул.&nbsp;Большая Конюшенная 19/8, Санкт-Петербург</b></p>
           <p>Для заказов по телефону:
             <b>8 812 450-25-25</b>
             (с 10 до 20 ежедневно)</p>
-          <button class="button" type="button">Форма обратной связи</button>
+          <a class="button" href="#">Форма обратной связи</a>
         </div>
       </section>
     </main>
@@ -245,7 +265,7 @@
         </li>
       </ul>
       <ul class="navigation-footer">
-        <li>
+        <li class="navigation-footer__special-item">
           <a href="#">Для поставщиков</a>
         </li>
         <li>
@@ -259,7 +279,9 @@
         </li>
       </ul>
       <div class="developer-footer">
-        <img src="img/logo-developer.svg" width="107" height="36" alt="">
+        <a href="#">
+          <img src="img/logo-developer.svg" width="107" height="36" alt="htmlacademy">
+          </a>
         <p>Сделано в <a href="#">HTML Academy</a> © 2016</p>
       </div>
     </footer>
