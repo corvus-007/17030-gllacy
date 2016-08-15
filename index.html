@@ -25,7 +25,7 @@
                     <a href="#">Новинки</a>
                   </li>
                   <li>
-                    <a href="#">Сливочное</a>
+                    <a href="catalog.html">Сливочное</a>
                   </li>
                   <li>
                     <a href="#">Щербеты</a>
@@ -125,7 +125,7 @@
           </section>
 
           <div class="grid">
-            <div class="column-2">
+            <div class="grid__column-2">
               <div class="promo promo_jam">
                 <h2>Малинка даром!</h2>
                 <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -133,7 +133,7 @@
               </div>
             </div>
 
-            <div class="column-2">
+            <div class="grid__column-2">
               <div class="promo promo_chocolate">
                 <h2>Шоколадки даром!</h2>
                 <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
@@ -152,8 +152,10 @@
                   <div class="product__price">
                     <span>310 ₽</span>/кг
                   </div>
+                  <span class="product__badge product__badge--type-hit">Хит</span>
                 </div>
                 <h2 class="product__name"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h2>
+                <a class="button" href="#">Быстрый просмотр</a>
               </article>
               <article class="product">
                 <div class="product__box-wrapper">
@@ -163,8 +165,10 @@
                   <div class="product__price">
                     <span>380 ₽</span>/кг
                   </div>
+                  <span class="product__badge product__badge--type-hit">Хит</span>
                 </div>
                 <h2 class="product__name"><a href="#">Сливочно-кофейное с кусочками шоколада</a></h2>
+                <a class="button" href="#">Быстрый просмотр</a>
               </article>
               <article class="product">
                 <div class="product__box-wrapper">
@@ -174,8 +178,10 @@
                   <div class="product__price">
                     <span>355 ₽</span>/кг
                   </div>
+                  <span class="product__badge product__badge--type-hit">Хит</span>
                 </div>
                 <h2 class="product__name"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h2>
+                <a class="button" href="#">Быстрый просмотр</a>
               </article>
               <article class="product">
                 <div class="product__box-wrapper">
@@ -185,8 +191,10 @@
                   <div class="product__price">
                     <span>415 ₽</span>/кг
                   </div>
+                  <span class="product__badge product__badge--type-hit">Хит</span>
                 </div>
                 <h2 class="product__name"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h2>
+                <a class="button" href="#">Быстрый просмотр</a>
               </article>
             </div>
           </section>
@@ -214,7 +222,7 @@
           </section>
 
           <div class="grid">
-            <div class="column-2">
+            <div class="grid__column-2">
               <section class="news-preview">
                 <h2>Новое в нашем блоге</h2>
                 <h3>
@@ -224,7 +232,7 @@
                 </h3>
               </section>
             </div>
-            <div class="column-2">
+            <div class="grid__column-2">
               <section class="subscribe">
                 <div class="subscribe__inner">
                   <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
@@ -239,50 +247,64 @@
         </div>
 
         <section class="contacts">
-          <div class="contacts-map" id="contacts-map"></div>
-          <div class="contacts-info">
-            <p>Для заказов по телефону:
-              <b>8 812 450-25-25</b>
-              (с 10 до 20 ежедневно)</p>
-            <a class="button" href="#">Форма обратной связи</a>
+          <div class="contacts-map" id="contacts-map">
+            <img src="http://placehold.it/1920x430" height="430" alt="Карта">
+          </div>
+          <div class="container">
+            <div class="contacts-info">
+              <p><span>Адрес главного офиса и</span>
+              <span>офлайн магазина:</span> <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
+              <p>Для заказов по телефону:
+                <b>8 812 450-25-25</b>
+                (с 10 до 20 ежедневно)</p>
+              <a class="button" href="#">Форма обратной связи</a>
+            </div>
           </div>
         </section>
       </main>
 
       <footer class="main-footer container">
-        <ul class="socials-footer">
-          <li>
-            <a href="#">Twitter</a>
-          </li>
-          <li>
-            <a href="#">Instagram</a>
-          </li>
-          <li>
-            <a href="#">Facebook</a>
-          </li>
-          <li>
-            <a href="#">Вконтакте</a>
-          </li>
-        </ul>
-        <ul class="navigation-footer">
-          <li class="navigation-footer__special-item">
-            <a href="#">Для поставщиков</a>
-          </li>
-          <li>
-            <a href="#">О производстве</a>
-          </li>
-          <li>
-            <a href="#">Наши документы</a>
-          </li>
-          <li>
-            <a href="#">Экологические стандарты</a>
-          </li>
-        </ul>
-        <div class="developer-footer">
-          <a href="#">
-            <img src="img/logo-developer.svg" width="107" height="36" alt="htmlacademy">
-            </a>
-          <p>Сделано в <a href="#">HTML Academy</a> © 2016</p>
+        <div class="grid">
+          <div class="grid__column-1">
+            <ul class="socials-footer">
+              <li>
+                <a href="#">Twitter</a>
+              </li>
+              <li>
+                <a href="#">Instagram</a>
+              </li>
+              <li>
+                <a href="#">Facebook</a>
+              </li>
+              <li>
+                <a href="#">Вконтакте</a>
+              </li>
+            </ul>
+          </div>
+          <div class="grid__column-2">
+            <ul class="navigation-footer">
+              <li class="navigation-footer__special-item">
+                <a href="#">Для поставщиков</a>
+              </li>
+              <li>
+                <a href="#">О производстве</a>
+              </li>
+              <li>
+                <a href="#">Наши документы</a>
+              </li>
+              <li>
+                <a href="#">Экологические стандарты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="grid__column-1">
+            <div class="developer-footer">
+              <a href="#">
+                <img src="img/logo-developer.svg" width="107" height="36" alt="htmlacademy">
+                </a>
+              <p>Сделано в <a href="#">HTML Academy</a> © 2016</p>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
