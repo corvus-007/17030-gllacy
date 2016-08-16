@@ -46,7 +46,7 @@ img {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1146px;
   }
 }
 
@@ -578,7 +578,7 @@ input[id="slide-3"]:checked ~ .site-wrapper .slider figure:nth-child(3) {
 }
 
 .contacts-info {
-  width: 22.2%;
+  width: 250px;
   position: absolute;
   top: 50%;
   right: 0;
