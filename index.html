@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="homepage">
@@ -62,14 +63,14 @@
               <a class="login dashboard-header__control" href="#">Вход</a>
               <div class="dropdown">
                 <form class="login-form" name="login-form" action="" method="POST">
-                  <input type="email" name="email" required placeholder="Электронная почта">
-                  <input type="password" name="password" required placeholder="Пароль">
+                  <input type="email" name="email" placeholder="Электронная почта" required>
+                  <input type="password" name="password" placeholder="Пароль" required>
                   <div class="login-form__footer">
                     <div class="login-form__column-left">
                       <button class="button" type="submit">Войти</button>
                     </div>
                     <div class="login-form__column-right">
-                      <a href="#">Забыли пароль</a>
+                      <a href="#">Забыли пароль?</a>
                       <a href="#">Новая регистрация</a>
                     </div>
                   </div>
@@ -123,7 +124,7 @@
 
           <div class="grid">
             <div class="grid__column-2">
-              <div class="promo promo--jam">
+              <div class="promo promo--jam clearfix">
                 <h2>Малинка даром!</h2>
                 <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
                 <a class="button" href="#">Хочу варенье!</a>
@@ -131,7 +132,7 @@
             </div>
 
             <div class="grid__column-2">
-              <div class="promo promo--chocolate">
+              <div class="promo promo--chocolate clearfix">
                 <h2>Шоколадки даром!</h2>
                 <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
                 <a class="button" href="#">Хочу шоколадки!</a>
@@ -151,7 +152,7 @@
                   </div>
                   <span class="product__badge product__badge--type-hit">Хит</span>
                 </div>
-                <h2 class="product__name"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h2>
+                <h2 class="product__name"><a href="#"><span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span></a></h2>
                 <a class="button" href="#">Быстрый просмотр</a>
               </article>
               <article class="product">
@@ -164,7 +165,7 @@
                   </div>
                   <span class="product__badge product__badge--type-hit">Хит</span>
                 </div>
-                <h2 class="product__name"><a href="#">Сливочно-кофейное с кусочками шоколада</a></h2>
+                <h2 class="product__name"><a href="#"><span>Сливочно-кофейное с кусочками шоколада</span></a></h2>
                 <a class="button" href="#">Быстрый просмотр</a>
               </article>
               <article class="product">
@@ -177,7 +178,7 @@
                   </div>
                   <span class="product__badge product__badge--type-hit">Хит</span>
                 </div>
-                <h2 class="product__name"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h2>
+                <h2 class="product__name"><a href="#"><span>Сливочно-клубничное с присыпкой из белого шоколада</span></a></h2>
                 <a class="button" href="#">Быстрый просмотр</a>
               </article>
               <article class="product">
@@ -190,14 +191,14 @@
                   </div>
                   <span class="product__badge product__badge--type-hit">Хит</span>
                 </div>
-                <h2 class="product__name"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h2>
+                <h2 class="product__name"><a href="#"><span>Сливочное крем-брюле с карамельной подливкой</span></a></h2>
                 <a class="button" href="#">Быстрый просмотр</a>
               </article>
             </div>
           </section>
 
           <section class="features">
-            <p><b>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</b></p>
+            <p>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
             <ul class="features-list">
               <li>
                 <span class="icon icon-icecream"></span>
@@ -223,8 +224,8 @@
               <section class="news-preview">
                 <h2>Новое в нашем блоге</h2>
                 <h3>
-                  <a href="#">10 способов сервировки
-                  фруктовых щербетов <br>
+                  <a href="#">10 способов сервировки<br>
+                  фруктовых щербетов<br>
                   к столу</a>
                 </h3>
               </section>
@@ -234,7 +235,7 @@
                 <div class="subscribe__inner">
                   <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
                   <form class="subscribe-form" name="subscribe-form" action="" method="POST">
-                    <input type="email" name="email" placeholder="Электронная почта">
+                    <input type="email" name="email" placeholder="Электронная почта" required>
                     <button class="button" type="submit">Отправить</button>
                   </form>
                 </div>
@@ -245,7 +246,7 @@
 
         <section class="contacts">
           <div class="contacts-map" id="contacts-map"></div>
-          <div class="container">
+          <div class="container clearfix">
             <div class="contacts-info">
               <p><span>Адрес главного офиса и</span>
               <span>офлайн магазина:</span> <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
