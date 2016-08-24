@@ -8,6 +8,8 @@ var cssmin = require('gulp-cssmin');
 var rename = require('gulp-rename');
 var plumber = require('gulp-plumber');
 
+
+
 gulp.task('svgstore', function() {
   return gulp
     .src('img/svg-icons/*.svg')
@@ -26,6 +28,8 @@ gulp.task('svgstore', function() {
     .pipe(gulp.dest('img/'));
 });
 
+
+
 gulp.task('css', function() {
   return gulp
     .src('css/style-dev.css')
@@ -40,6 +44,7 @@ gulp.task('css', function() {
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('css/'))
 });
+
 
 
 gulp.task('watch-css', ['css'], function() {

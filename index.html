@@ -314,6 +314,17 @@
         </div>
       </footer>
     </div>
+    <div class="modal">
+      <button class="modal__close" type="button" title="Закрыть">Закрыть</button>
+      <div class="modal__title">Мы обязательно вам ответим!</div>
+      <form class="feedback-form" name="feedback-form" action="" method="POST">
+        <input type="text" name="name" placeholder="Как вас зовут?" required>
+        <input type="email" name="email" placeholder="Ваша почта для ответа?" required>
+        <textarea name="message" placeholder="Напишите что-нибудь…"></textarea>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+    </div>
+    <div class="modal-overlay"></div>
     <script src="js/script.js"></script>
   </body>
 </html>

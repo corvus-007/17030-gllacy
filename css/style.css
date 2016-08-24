@@ -686,7 +686,9 @@ img {
 input[type="text"],
 input[type="password"],
 input[type="search"],
-input[type="email"] {
+input[type="email"],
+textarea {
+  width: 100%;
   padding: 9px 15px;
   border: 1px solid rgba(178, 178, 178, 0.52);
   box-sizing: border-box;
@@ -702,16 +704,24 @@ input[type="email"] {
 input[type="text"]:hover,
 input[type="password"]:hover,
 input[type="search"]:hover,
-input[type="email"]:hover {
+input[type="email"]:hover,
+textarea:hover {
   box-shadow: inset 0 0 0 1px rgba(178, 178, 178, 0.52);
 }
 
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
-input[type="email"]:focus {
+input[type="email"]:focus,
+textarea:focus {
   border-color: rgba(46, 136, 228, 0.52);
   box-shadow: inset 0 0 0 1px rgba(46, 136, 228, 0.52);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 155px;
+  max-height: 255px;
 }
 
 .custom-control {
@@ -730,7 +740,7 @@ input[type="email"]:focus {
   margin-left: 20px;
 }
 
-.custom-control input {
+.custom-control > input {
   display: none;
 }
 
@@ -817,7 +827,141 @@ input[type="radio"]:checked + .custom-control__indicator::before {
   line-height: 18px;
 }
 
+.custom-select {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color 0.18s, color 0.18s;
+  border-radius: 50px;
+}
+
+.custom-select::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid currentColor;
+  pointer-events: none;
+}
+
+.custom-select:hover {
+  color: #323232;
+  background-color: #fff;
+}
+
+.custom-select select {
+  height: 36px;
+  padding: 8px 16px;
+  padding-right: 40px;
+  border: none;
+  font-size: 16px;
+  line-height: 18px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  background: none;
+  color: currentColor;
+  transition: background-color 0.18s;
+}
+
+.custom-select select::-ms-expand {
+  display: none;
+}
+
+.custom-select option {
+  color: #323232;
+}
+
 /*=====  End of Form's elements  ======*/
+
+/*=============================
+=            Modal            =
+=============================*/
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  transform: translateY(-50%);
+  margin: auto;
+  max-width: 430px;
+  padding: 20px 25px 27px;
+  border-radius: 10px;
+  background-color: #f8f7f4;
+  color: #323232;
+}
+
+.modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  font-size: 0;
+  text-indent: -1000px;
+  cursor: pointer;
+  background: none;
+  transition: color 0.15s;
+}
+
+.modal__close:hover {
+  color: #e84d37;
+}
+
+.modal__close::before,
+.modal__close::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 22px;
+  height: 2px;
+  background-color: currentColor;
+}
+
+.modal__close::before {
+  transform: rotate(45deg);
+}
+
+.modal__close::after {
+  transform: rotate(-45deg);
+}
+
+.modal__title {
+  padding-right: 30px;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*=====  End of Modal  ======*/
 
 /*============================
 =            Grid            =
@@ -996,8 +1140,6 @@ input[type="radio"]:checked + .custom-control__indicator::before {
   white-space: nowrap;
 }
 
-/*.main-navigation__item:hover .dropdown,*/
-
 .main-navigation__link:focus + .submenu {
   transform: none;
   opacity: 1;
@@ -1089,6 +1231,7 @@ input[type="radio"]:checked + .custom-control__indicator::before {
   background-color: rgba(255, 255, 255, 0.2);
   outline: none;
   transition: background-color 0.2s, color 0.2s;
+  cursor: default;
 }
 
 .dashboard-header__item:hover .dashboard-header__control {
@@ -1153,6 +1296,35 @@ input[type="radio"]:checked + .custom-control__indicator::before {
 
 
 /*=====  End of Login form  ======*/
+
+/*=====================================
+=            Feedback form            =
+=====================================*/
+
+
+
+.feedback-form::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+  margin-bottom: 20px;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+  width: 267px;
+}
+
+.feedback-form .button {
+  float: right;
+}
+
+/*=====  End of Feedback form  ======*/
 
 /*==============================
 =            Slider            =
@@ -1247,7 +1419,7 @@ input[id="slide-3"]:checked ~ .site-wrapper .slide:nth-child(3) {
   list-style: none;
   text-align: left;
   font-size: 0;
-  z-index: 20;
+  z-index: 2;
 }
 
 .slider-controls label {
@@ -1367,7 +1539,7 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 .pagination .prev,
 .pagination .next {
   overflow: hidden;
-  text-indent: -150%;
+  text-indent: -1000px;
   background-color: #8df;
   border-radius: 0;
 }
@@ -1781,6 +1953,7 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 
 .filter-form legend {
   margin-bottom: 10px;
+  margin-left: 16px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
@@ -1791,7 +1964,7 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
   border-radius: 50px;
   border: none;
   font-size: 16px;
-  line-height: 18px;
+  /*line-height: 18px;*/
   font-weight: 500;
   background-color: rgba(255, 255, 255, 0.2);
 }
