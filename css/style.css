@@ -750,13 +750,11 @@ textarea {
 .custom-control__indicator {
   position: absolute;
   left: 0;
-  /*display: inline-block;*/
   vertical-align: middle;
   width: 20px;
   height: 20px;
   border: 1px solid #f8f7f4;
   box-sizing: border-box;
-  /*margin-right: 10px;*/
   background-repeat: no-repeat;
   background-position: center;
   transition: border 0.05s;
@@ -1325,9 +1323,26 @@ input[type="radio"]:checked + .custom-control__indicator::before {
   margin-right: 5px;
 }
 
+.trigger-cart .icon {
+  color: transparent;
+  fill: #ffffff;
+  transition: fill 0.18s;
+}
+
+.trigger-cart:hover .icon {
+  color: transparent;
+  fill: #323232;
+}
+
 .trigger-cart--has-product {
   background-color: #f8f7f4;
   color: #323232;
+}
+
+.trigger-cart--has-product .icon,
+.trigger-cart--has-product:hover .icon {
+  fill: #323232;
+  color: #e84d37;
 }
 
 /*=====  End of Dashboard header  ======*/
@@ -1581,18 +1596,23 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 ==================================*/
 
 .pagination {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: right;
   font-weight: 500;
   cursor: default;
 }
 
 .pagination a {
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
   min-width: 25px;
   height: 25px;
+  margin-left: 3px;
   line-height: 25px;
+  text-align: center;
   text-decoration: none;
   border-radius: 50%;
   transition: color 0.2s, background-color 0.2s;
@@ -1616,21 +1636,62 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 .pagination .prev,
 .pagination .next {
   overflow: hidden;
+  position: relative;
   text-indent: -1000px;
-  background-color: #88ddff;
+  font-size: 0;
   border-radius: 0;
+  min-width: 8px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.pagination .prev:hover,
+.pagination .next:hover {
+  background-color: transparent;
 }
 
 .pagination .prev {
+  margin-left: 0;
   margin-right: 15px;
+  background-image: url("../img/svg-icons/control-prev.svg");
 }
 
 .pagination .next {
   margin-left: 15px;
+  background-image: url("../img/svg-icons/control-next.svg");
 }
+
+/*.pagination .prev::before,
+.pagination .next::before {
+  content: "";
+  position: absolute;
+  transform: rotate(45deg);
+  width: 9px;
+  height: 9px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 2px solid currentColor;
+  box-sizing: border-box;
+}
+
+.pagination .prev::before {
+  border-top: none;
+  border-right: none;
+  left: auto;
+}
+
+.pagination .next::before {
+  right: auto;
+  border-left: none;
+  border-bottom: none;
+}*/
 
 .pagination .disabled {
   opacity: 0.2;
+  cursor: default;
 }
 
 /*=====  End of Pagination  ======*/
