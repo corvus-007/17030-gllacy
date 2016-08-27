@@ -671,25 +671,10 @@ img {
 =            Form's elements            =
 =======================================*/
 
-::-webkit-input-placeholder {
+/*::placeholder {
   font-weight: normal;
   color: #999999;
-}
-
-::-moz-placeholder {
-  font-weight: normal;
-  color: #999999;
-}
-
-:-ms-input-placeholder {
-  font-weight: normal;
-  color: #999999;
-}
-
-::placeholder {
-  font-weight: normal;
-  color: #999999;
-}
+}*/
 
 input[type="text"],
 input[type="password"],
@@ -697,18 +682,62 @@ input[type="search"],
 input[type="email"],
 textarea {
   width: 100%;
-  padding: 9px 15px;
+  padding: 0 15px;
   border: 1px solid rgba(178, 178, 178, 0.52);
   box-sizing: border-box;
   font-family: inherit;
   font-size: 14px;
-  line-height: 24px;
-  min-height: 44px;
+  line-height: 42px;
+  height: 44px;
   border-radius: 5px;
   outline: none;
   -webkit-transition: border-color 0.2s, box-shadow 0.2s;
   transition: border-color 0.2s, box-shadow 0.2s;
   font-weight: bold;
+}
+
+input[type="text"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder,
+input[type="search"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-weight: normal;
+  color: #999999;
+  font-family: inherit;
+  opacity: 1;
+}
+
+input[type="text"]::-moz-placeholder,
+input[type="password"]::-moz-placeholder,
+input[type="search"]::-moz-placeholder,
+input[type="email"]::-moz-placeholder,
+textarea::-moz-placeholder {
+  font-weight: normal;
+  color: #999999;
+  font-family: inherit;
+  opacity: 1;
+}
+
+input[type="text"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder,
+input[type="search"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  font-weight: normal;
+  color: #999999;
+  font-family: inherit;
+  opacity: 1;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+input[type="search"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+  font-weight: normal;
+  color: #999999;
+  font-family: inherit;
+  opacity: 1;
 }
 
 input[type="text"]:hover,
@@ -1502,6 +1531,11 @@ input[type="radio"]:checked + .custom-control__indicator::before {
 .login-form input[type="password"] {
   min-width: 240px;
   margin-bottom: 20px;
+}
+
+.login-form p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .login-form a {
