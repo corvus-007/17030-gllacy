@@ -191,9 +191,9 @@ textarea {
   font-family: inherit;
   font-size: 14px;
   line-height: 24px;
+  min-height: 44px;
   border-radius: 5px;
   outline: none;
-  box-sizing: border-box;
   transition: border-color 0.2s, box-shadow 0.2s;
   font-weight: bold;
 }
@@ -1634,8 +1634,7 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
   right: 0;
   bottom: 0;
   left: 0;
-  background: #d7dfd8 url("../img/bg-contacts-map.jpg") no-repeat center;
-  /*background-size: cover;*/
+  background-color: #d7dfd8;
 }
 
 .contacts-info {
@@ -1713,11 +1712,11 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 }
 
 .filter-form .form-section--fat {
-  max-width: 420px;
+  max-width: 425px;
 }
 
 .filter-form .form-section--filler {
-  max-width: 690px;
+  max-width: 695px;
 }
 
 

@@ -1,16 +1,16 @@
 // 'use strict';
 
-var btnOpenModal = document.querySelector('.js-open-modal');
-var modal = document.querySelector('.modal');
-var modalOverlay = document.querySelector('.modal-overlay');
-var btnCloseModal = modal.querySelector('.modal__close');
-var feedbackForm = modal.querySelector('.feedback-form');
-var feedbackName = feedbackForm.querySelector('[name=name]');
-var feedbackEmail = feedbackForm.querySelector('[name=email]');
-var feedbackMessage = feedbackForm.querySelector('[name=message]');
-var storageFeedbackName = localStorage.getItem('feedbackName');
-
-
+var btnOpenModal = document.querySelector('.js-open-modal'),
+     modal = document.querySelector('.modal'),
+     modalOverlay = document.querySelector('.modal-overlay'),
+     btnCloseModal = modal.querySelector('.modal__close'),
+     feedbackForm = modal.querySelector('.feedback-form'),
+     feedbackName = feedbackForm.querySelector('[name=name]'),
+     feedbackEmail = feedbackForm.querySelector('[name=email]'),
+     feedbackMessage = feedbackForm.querySelector('[name=message]'),
+     storageFeedbackName = localStorage.getItem('feedbackName'),
+     map,
+     mapMarker;
 
 btnOpenModal.addEventListener('click', function(event) {
   event.preventDefault();
@@ -44,7 +44,6 @@ feedbackForm.addEventListener('submit', function(event) {
 });
 
 window.addEventListener('keyup', function(event) {
-  console.log(event);
   if (event.keyCode === 27) {
     if (modal.classList.contains('modal--opened')) {
       modal.classList.remove('modal--opened', 'modal--error');
@@ -52,3 +51,33 @@ window.addEventListener('keyup', function(event) {
     }
   }
 });
+
+
+// Yandex map
+ymaps.ready(init);
+
+function init() {
+  map = new ymaps.Map("contacts-map", {
+    center: [59.939327, 30.327901],
+    zoom: 16,
+    controls: []
+  });
+
+  map.behaviors.disable(['scrollZoom']);
+
+  mapMarker = new ymaps.Placemark([59.938657, 30.322982], {
+    hintContent: "ул. Большая Конюшенная 19/8, Санкт-Петербург"
+  }, {
+    iconLayout: 'default#image',
+    iconImageHref: 'img/map-pin.svg',
+    iconImageSize: [79, 139],
+    iconImageOffset: [-39, -139],
+    iconShadow: true,
+    iconShadowLayout: 'default#image',
+    iconShadowImageHref: 'img/shadow-map-pin.png',
+    iconShadowImageSize: [182, 110],
+    iconShadowImageOffset: [0, -110]
+  });
+
+  map.geoObjects.add(mapMarker);
+}
