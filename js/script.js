@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 var btnOpenModal = document.querySelector('.js-open-modal');
 var modal = document.querySelector('.modal');

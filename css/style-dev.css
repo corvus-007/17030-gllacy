@@ -560,10 +560,6 @@ transform: scale(1.08);
   }
 }
 
-
-
-
-
 /*=====  End of Modal  ======*/
 
 
@@ -1584,11 +1580,12 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 }
 
 .subscribe__inner {
+  position: relative;
   min-height: 210px;
   padding: 30px 20px 35px;
+  box-sizing: border-box;
   border-radius: 10px;
   background-color: #f8f7f4;
-  box-sizing: border-box;
 }
 
 .subscribe__inner p {
@@ -1597,6 +1594,10 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 }
 
 .subscribe-form {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 35px;
   display: flex;
 }
 
