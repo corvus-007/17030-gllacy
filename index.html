@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   </head>
   <body class="homepage">
@@ -58,7 +58,10 @@
               </a>
               <div class="dropdown">
                 <form class="search-form" action="/" method="GET">
-                  <input type="search" name="q" placeholder="Что ищем?">
+                  <label class="floating-label">
+                    <input type="search" name="q" placeholder="Что ищем?">
+                    <span class="label-text">Что ищем?</span>
+                  </label>
                 </form>
               </div>
             </div>
@@ -69,8 +72,14 @@
               </a>
               <div class="dropdown">
                 <form class="login-form" name="login-form" action="/" method="POST">
-                  <input type="email" name="email" placeholder="Электронная почта" required>
-                  <input type="password" name="password" placeholder="Пароль" required>
+                  <label class="floating-label">
+                    <input type="email" name="email" placeholder="Электронная почта" required>
+                    <span class="label-text">Электронная почта</span>
+                  </label>
+                  <label class="floating-label">
+                    <input type="password" name="password" placeholder="Пароль" required>
+                    <span class="label-text">Пароль</span>
+                  </label>
                   <div class="login-form__footer">
                     <div class="login-form__column-left">
                       <button class="button" type="submit">Войти</button>
@@ -154,7 +163,6 @@
                   <span class="product__badge product__badge--type-hit">Хит</span>
                 </div>
                 <h2 class="product__name"><a href="#"><span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span></a></h2>
-                <!-- <a class="button" href="#">Быстрый просмотр</a> -->
               </article>
               <article class="product">
                 <div class="product__box-wrapper">
@@ -167,7 +175,6 @@
                   <span class="product__badge product__badge--type-hit">Хит</span>
                 </div>
                 <h2 class="product__name"><a href="#"><span>Сливочно-кофейное с кусочками шоколада</span></a></h2>
-                <!-- <a class="button" href="#">Быстрый просмотр</a> -->
               </article>
               <article class="product">
                 <div class="product__box-wrapper">
@@ -180,7 +187,6 @@
                   <span class="product__badge product__badge--type-hit">Хит</span>
                 </div>
                 <h2 class="product__name"><a href="#"><span>Сливочно-клубничное с присыпкой из белого шоколада</span></a></h2>
-                <!-- <a class="button" href="#">Быстрый просмотр</a> -->
               </article>
               <article class="product">
                 <div class="product__box-wrapper">
@@ -193,7 +199,6 @@
                   <span class="product__badge product__badge--type-hit">Хит</span>
                 </div>
                 <h2 class="product__name"><a href="#"><span>Сливочное крем-брюле с карамельной подливкой</span></a></h2>
-                <!-- <a class="button" href="#">Быстрый просмотр</a> -->
               </article>
             </div>
           </section>
@@ -234,9 +239,12 @@
             <div class="grid__column-2">
               <section class="subscribe">
                 <div class="subscribe__inner">
-                  <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
+                  <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
                   <form class="subscribe-form" name="subscribe-form" action="/" method="POST">
-                    <input type="email" name="email" placeholder="Электронная почта" required>
+                    <label class="floating-label">
+                      <input type="email" name="email" placeholder="Электронная почта" required>
+                      <span class="label-text">Электронная почта</span>
+                    </label>
                     <button class="button" type="submit">Отправить</button>
                   </form>
                 </div>
@@ -254,7 +262,7 @@
               <p>Для заказов по телефону:
                 <span><b>8 812 450-25-25</b></span>
                 (с 10 до 20 ежедневно)</p>
-              <a class="button js-open-modal" href="#">Форма обратной связи</a>
+              <a class="button js-open-modal" href="page-feedback-form.html">Форма обратной связи</a>
             </div>
           </div>
         </section>
@@ -304,14 +312,26 @@
       <button class="modal__close" type="button" title="Закрыть">Закрыть</button>
       <div class="modal__title">Мы обязательно вам ответим!</div>
       <form class="feedback-form" name="feedback-form" action="/" method="POST">
-        <input type="text" name="name" placeholder="Как вас зовут?" >
-        <input type="email" name="email" placeholder="Ваша почта для ответа?" >
-        <textarea name="message" placeholder="Напишите что-нибудь…"></textarea>
+        <label class="floating-label">
+          <input type="text" name="name" placeholder="Как вас зовут?">
+          <span class="label-text">Как вас зовут?</span>
+        </label>
+        <label class="floating-label">
+          <input type="email" name="email" placeholder="Ваша почта для ответа?">
+          <span class="label-text">Ваша почта для ответа?</span>
+        </label>
+        <label class="floating-label">
+          <textarea name="message" placeholder="Напишите что-нибудь…"></textarea>
+          <span class="label-text">Напишите что-нибудь…</span>
+        </label>
         <button class="button" type="submit">Отправить</button>
       </form>
     </div>
     <div class="modal-overlay"></div>
+
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/modal.min.js"></script>
+    <script src="js/map.min.js"></script>
   </body>
 </html>

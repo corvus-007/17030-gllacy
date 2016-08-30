@@ -179,7 +179,6 @@ img {
   color: #999999;
 }*/
 
-
 input[type="text"],
 input[type="password"],
 input[type="search"],
@@ -232,6 +231,44 @@ textarea {
   min-height: 155px;
   max-height: 255px;
 }
+
+
+/* Floating label */
+.floating-label {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.floating-label input:focus::placeholder,
+.floating-label textarea:focus::placeholder {
+  opacity: 0;
+}
+
+.floating-label .label-text {
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: 2px;
+  left: 15px;
+  opacity: 0;
+  transform: translateY(10px);
+  font-size: 11px;
+  line-height: 13px;
+  color: #999999;
+  transition: transform 0.15s, opacity 0.1s, color 0.15s;
+}
+
+.floating-label--active .label-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.floating-label--focusing .label-text {
+  color: #5b9ddf;
+}
+
 
 
 /* Custom control */
@@ -1618,7 +1655,7 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
   display: flex;
 }
 
-.subscribe-form input[type="email"] {
+.subscribe-form .floating-label {
   display: block;
   flex: 1;
   margin-right: 11px;
@@ -1652,6 +1689,7 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
   bottom: 0;
   left: 0;
   background-color: #d7dfd8;
+  background: #d7dfd8 url("../img/bg-contacts-map.png") no-repeat center;
 }
 
 .contacts-info {

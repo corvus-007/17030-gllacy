@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси | Каталог</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="main-header container">
@@ -52,7 +52,10 @@
             </a>
             <div class="dropdown">
               <form class="search-form" action="/" method="GET">
-                <input type="search" name="q" placeholder="Что ищем?">
+                <label class="floating-label">
+                  <input type="search" name="q" placeholder="Что ищем?">
+                  <span class="label-text">Что ищем?</span>
+                </label>
               </form>
             </div>
           </div>
@@ -63,8 +66,14 @@
             </a>
             <div class="dropdown">
               <form class="login-form" name="login-form" action="/" method="POST">
-                <input type="email" name="email" placeholder="Электронная почта" required>
-                <input type="password" name="password" placeholder="Пароль" required>
+                <label class="floating-label">
+                  <input type="email" name="email" placeholder="Электронная почта" required>
+                  <span class="label-text">Электронная почта</span>
+                </label>
+                <label class="floating-label">
+                  <input type="password" name="password" placeholder="Пароль" required>
+                  <span class="label-text">Пароль</span>
+                </label>
                 <div class="login-form__footer">
                   <div class="login-form__column-left">
                     <button class="button" type="submit">Войти</button>
@@ -432,5 +441,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/script.min.js"></script>
   </body>
 </html>
