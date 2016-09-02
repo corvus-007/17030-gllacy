@@ -1,508 +1,11 @@
-/*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
-
-/**
- * 1. Change the default font family in all browsers (opinionated).
- * 2. Correct the line height in all browsers.
- * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
- */
-
-/* Document
-   ========================================================================== */
-
-html {
-  font-family: sans-serif;
-  /* 1 */
-  line-height: 1.15;
-  /* 2 */
-  -ms-text-size-adjust: 100%;
-  /* 3 */
-  -webkit-text-size-adjust: 100%;
-  /* 3 */
-}
-
-/* Sections
-   ========================================================================== */
-
-/**
- * Remove the margin in all browsers (opinionated).
- */
-
-body {
-  margin: 0;
-}
-
-/**
- * Add the correct display in IE 9-.
- */
-
-article,
-aside,
-footer,
-header,
-nav,
-section {
-  display: block;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/* Grouping content
-   ========================================================================== */
-
-/**
- * Add the correct display in IE 9-.
- * 1. Add the correct display in IE.
- */
-
-figcaption,
-figure,
-main {
-  /* 1 */
-  display: block;
-}
-
-/**
- * Add the correct margin in IE 8.
- */
-
-figure {
-  margin: 1em 40px;
-}
-
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-
-hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-
-/* Text-level semantics
-   ========================================================================== */
-
-/**
- * 1. Remove the gray background on active links in IE 10.
- * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
- */
-
-a {
-  background-color: transparent;
-  /* 1 */
-  -webkit-text-decoration-skip: objects;
-  /* 2 */
-}
-
-/**
- * Remove the outline on focused links when they are also active or hovered
- * in all browsers (opinionated).
- */
-
-a:active,
-a:hover {
-  outline-width: 0;
-}
-
-/**
- * 1. Remove the bottom border in Firefox 39-.
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-
-abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
-}
-
-/**
- * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
- */
-
-b,
-strong {
-  font-weight: inherit;
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-
-/**
- * Add the correct font style in Android 4.3-.
- */
-
-dfn {
-  font-style: italic;
-}
-
-/**
- * Add the correct background and color in IE 9-.
- */
-
-mark {
-  background-color: #ff0;
-  color: #000;
-}
-
-/**
- * Add the correct font size in all browsers.
- */
-
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/* Embedded content
-   ========================================================================== */
-
-/**
- * Add the correct display in IE 9-.
- */
-
-audio,
-video {
-  display: inline-block;
-}
-
-/**
- * Add the correct display in iOS 4-7.
- */
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-/**
- * Remove the border on images inside links in IE 10-.
- */
-
-img {
-  border-style: none;
-}
-
-/**
- * Hide the overflow in IE.
- */
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
-/* Forms
-   ========================================================================== */
-
-/**
- * 1. Change the font styles in all browsers (opinionated).
- * 2. Remove the margin in Firefox and Safari.
- */
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: sans-serif;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
-}
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-
-button,
-input {
-  /* 1 */
-  overflow: visible;
-}
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-
-button,
-select {
-  /* 1 */
-  text-transform: none;
-}
-
-/**
- * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
- *    controls in Android 4.
- * 2. Correct the inability to style clickable types in iOS and Safari.
- */
-
-button,
-html [type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */
-}
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
- * Change the border, margin, and padding in all browsers (opinionated).
- */
-
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-
-legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
-}
-
-/**
- * 1. Add the correct display in IE 9-.
- * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-
-progress {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */
-}
-
-/**
- * Remove the default vertical scrollbar in IE.
- */
-
-textarea {
-  overflow: auto;
-}
-
-/**
- * 1. Add the correct box sizing in IE 10-.
- * 2. Remove the padding in IE 10-.
- */
-
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
-}
-
-/**
- * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
- */
-
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-}
-
-/* Interactive
-   ========================================================================== */
-
-/*
- * Add the correct display in IE 9-.
- * 1. Add the correct display in Edge, IE, and Firefox.
- */
-
-details,
-menu {
-  display: block;
-}
-
-/*
- * Add the correct display in all browsers.
- */
-
-summary {
-  display: list-item;
-}
-
-/* Scripting
-   ========================================================================== */
-
-/**
- * Add the correct display in IE 9-.
- */
-
-canvas {
-  display: inline-block;
-}
-
-/**
- * Add the correct display in IE.
- */
-
-template {
-  display: none;
-}
-
-/* Hidden
-   ========================================================================== */
-
-/**
- * Add the correct display in IE 10-.
- */
-
-[hidden] {
-  display: none;
-}
+@import url("normalize.css");
 
 body {
   font-size: 16px;
   line-height: 1.375;
   font-weight: normal;
   font-family: "Roboto", "Arial", "Helvetica", sans-serif;
-  color: #ffffff;
+  color: #fff;
   min-width: 900px;
   background-color: #849d8f;
 }
@@ -557,6 +60,9 @@ img {
   margin-bottom: 40px;
 }
 
+
+
+
 /*================================
 =            Dropdown            =
 ================================*/
@@ -572,14 +78,10 @@ img {
   position: absolute;
   top: 100%;
   margin-top: 5px;
-  -webkit-transform: translateY(15px);
   transform: translateY(15px);
   background-color: #f8f7f4;
   color: #323232;
-  -webkit-transition: opacity 0.2s, visibility 0s 0.2s, -webkit-transform 0.2s;
-  transition: opacity 0.2s, visibility 0s 0.2s, -webkit-transform 0.2s;
   transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
-  transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s, -webkit-transform 0.2s;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   z-index: 2;
   border-radius: 6px;
@@ -595,17 +97,17 @@ img {
 }
 
 .dropdown-trigger:hover .dropdown {
-  -webkit-transform: none;
   transform: none;
   opacity: 1;
   visibility: visible;
-  -webkit-transition: opacity 0.2s, visibility 0s, -webkit-transform 0.2s;
-  transition: opacity 0.2s, visibility 0s, -webkit-transform 0.2s;
   transition: transform 0.2s, opacity 0.2s, visibility 0s;
-  transition: transform 0.2s, opacity 0.2s, visibility 0s, -webkit-transform 0.2s;
 }
 
 /*=====  End of Dropdown  ======*/
+
+
+
+
 
 /*===============================
 =            Buttons            =
@@ -616,19 +118,14 @@ img {
   padding: 10px 20px;
   font-size: 18px;
   line-height: 24px;
-  color: #ffffff;
+  color: #fff;
   border: none;
   font-family: inherit;
   background: #ec583c;
-  background: -webkit-linear-gradient(top, #f26843, #ca3824);
   background: linear-gradient(to bottom, #f26843, #ca3824);
   border-radius: 50px;
   text-decoration: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-  -webkit-transition: all 0.15s;
   transition: all 0.15s;
   font-weight: bold;
   outline: none;
@@ -639,19 +136,21 @@ img {
 .button:hover,
 .button:focus {
   background: #ee7561;
-  background: -webkit-linear-gradient(top, #f58669, #ec6f5e);
   background: linear-gradient(to bottom, #f58669, #ec6f5e);
   box-shadow: 0 1px 2px #ac1000;
 }
 
 .button:active {
   background: #dc5539;
-  background: -webkit-linear-gradient(top, #d74632, #e1613e);
   background: linear-gradient(to bottom, #d74632, #e1613e);
   box-shadow: inset 0 2px 2px #942718;
 }
 
 /*=====  End of Buttons  ======*/
+
+
+
+
 
 /*=============================
 =            Icons            =
@@ -666,6 +165,10 @@ img {
 }
 
 /*=====  End of Icons  ======*/
+
+
+
+
 
 /*=======================================
 =            Form's elements            =
@@ -682,7 +185,7 @@ input[type="search"],
 input[type="email"],
 textarea {
   width: 100%;
-  padding: 0 15px;
+  padding: 0px 15px;
   border: 1px solid rgba(178, 178, 178, 0.52);
   box-sizing: border-box;
   font-family: inherit;
@@ -691,42 +194,8 @@ textarea {
   height: 44px;
   border-radius: 5px;
   outline: none;
-  -webkit-transition: border-color 0.2s, box-shadow 0.2s;
   transition: border-color 0.2s, box-shadow 0.2s;
   font-weight: bold;
-}
-
-input[type="text"]::-webkit-input-placeholder,
-input[type="password"]::-webkit-input-placeholder,
-input[type="search"]::-webkit-input-placeholder,
-input[type="email"]::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  font-weight: normal;
-  color: #999999;
-  font-family: inherit;
-  opacity: 1;
-}
-
-input[type="text"]::-moz-placeholder,
-input[type="password"]::-moz-placeholder,
-input[type="search"]::-moz-placeholder,
-input[type="email"]::-moz-placeholder,
-textarea::-moz-placeholder {
-  font-weight: normal;
-  color: #999999;
-  font-family: inherit;
-  opacity: 1;
-}
-
-input[type="text"]:-ms-input-placeholder,
-input[type="password"]:-ms-input-placeholder,
-input[type="search"]:-ms-input-placeholder,
-input[type="email"]:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-  font-weight: normal;
-  color: #999999;
-  font-family: inherit;
-  opacity: 1;
 }
 
 input[type="text"]::placeholder,
@@ -763,29 +232,14 @@ textarea {
   max-height: 255px;
 }
 
-/* Floating label */
 
+/* Floating label */
 .floating-label {
   width: 100%;
   box-sizing: border-box;
   position: relative;
   display: inline-block;
   vertical-align: top;
-}
-
-.floating-label input:focus::-webkit-input-placeholder,
-.floating-label textarea:focus::-webkit-input-placeholder {
-  opacity: 0;
-}
-
-.floating-label input:focus::-moz-placeholder,
-.floating-label textarea:focus::-moz-placeholder {
-  opacity: 0;
-}
-
-.floating-label input:focus:-ms-input-placeholder,
-.floating-label textarea:focus:-ms-input-placeholder {
-  opacity: 0;
 }
 
 .floating-label input:focus::placeholder,
@@ -799,20 +253,15 @@ textarea {
   margin-bottom: 2px;
   left: 15px;
   opacity: 0;
-  -webkit-transform: translateY(10px);
   transform: translateY(10px);
   font-size: 11px;
   line-height: 13px;
   color: #999999;
-  -webkit-transition: opacity 0.1s, color 0.15s, -webkit-transform 0.15s;
-  transition: opacity 0.1s, color 0.15s, -webkit-transform 0.15s;
   transition: transform 0.15s, opacity 0.1s, color 0.15s;
-  transition: transform 0.15s, opacity 0.1s, color 0.15s, -webkit-transform 0.15s;
 }
 
 .floating-label--active .label-text {
   opacity: 1;
-  -webkit-transform: translateY(0);
   transform: translateY(0);
 }
 
@@ -820,15 +269,14 @@ textarea {
   color: #5b9ddf;
 }
 
+
+
 /* Custom control */
 
 .custom-control {
   position: relative;
   font-weight: 500;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
   padding-left: 31px;
@@ -852,7 +300,6 @@ textarea {
   box-sizing: border-box;
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-transition: border 0.05s;
   transition: border 0.05s;
 }
 
@@ -879,10 +326,7 @@ input:disabled ~ .custom-control__text {
   bottom: 0;
   left: 0;
   margin: auto;
-  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
-  transition: opacity 0.2s, -webkit-transform 0.2s;
   transition: transform 0.2s, opacity 0.2s;
-  transition: transform 0.2s, opacity 0.2s, -webkit-transform 0.2s;
   box-sizing: border-box;
   opacity: 0;
 }
@@ -900,12 +344,10 @@ input[type="checkbox"] + .custom-control__indicator::before {
   height: 6px;
   border-left: 3px solid currentColor;
   border-bottom: 3px solid currentColor;
-  -webkit-transform: rotate(-45deg) scale(0.5);
   transform: rotate(-45deg) scale(0.5);
 }
 
 input[type="checkbox"]:checked + .custom-control__indicator::before {
-  -webkit-transform: rotate(-45deg) scale(1);
   transform: rotate(-45deg) scale(1);
 }
 
@@ -918,12 +360,10 @@ input[type="radio"] + .custom-control__indicator::before {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  -webkit-transform: scale(0.5);
   transform: scale(0.5);
 }
 
 input[type="radio"]:checked + .custom-control__indicator::before {
-  -webkit-transform: scale(1);
   transform: scale(1);
 }
 
@@ -932,6 +372,7 @@ input[type="radio"]:checked + .custom-control__indicator::before {
   line-height: 18px;
 }
 
+
 /* Custom select */
 
 .custom-select {
@@ -939,7 +380,6 @@ input[type="radio"]:checked + .custom-control__indicator::before {
   display: inline-block;
   vertical-align: middle;
   background-color: rgba(255, 255, 255, 0.2);
-  -webkit-transition: background-color 0.18s, color 0.18s;
   transition: background-color 0.18s, color 0.18s;
   border-radius: 50px;
 }
@@ -967,13 +407,10 @@ input[type="radio"]:checked + .custom-control__indicator::before {
   border: none;
   font-size: 16px;
   line-height: 18px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   outline: none;
   background: none;
   color: currentColor;
-  -webkit-transition: background-color 0.18s;
   transition: background-color 0.18s;
   font-family: inherit;
   font-weight: 500;
@@ -987,6 +424,7 @@ input[type="radio"]:checked + .custom-control__indicator::before {
   color: #323232;
   font-weight: normal;
 }
+
 
 /* Custom range */
 
@@ -1022,17 +460,13 @@ input[type="radio"]:checked + .custom-control__indicator::before {
   cursor: pointer;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   background-color: currentColor;
-  -webkit-transition: width 0.18s, height 0.18s;
   transition: width 0.18s, height 0.18s;
-  -webkit-transition: -webkit-transform 0.18s;
-  transition: -webkit-transform 0.18s;
   transition: transform 0.18s;
-  transition: transform 0.18s, -webkit-transform 0.18s;
 }
 
 .custom-range__toggle:hover {
-  -webkit-transform: scale(1.08);
-  transform: scale(1.08);
+transform: scale(1.08);
+
 }
 
 .custom-range__toggle--min {
@@ -1044,6 +478,10 @@ input[type="radio"]:checked + .custom-control__indicator::before {
 }
 
 /*=====  End of Form's elements  ======*/
+
+
+
+
 
 /*=============================
 =            Modal            =
@@ -1060,7 +498,6 @@ input[type="radio"]:checked + .custom-control__indicator::before {
   left: 0;
   right: 0;
   z-index: 20;
-  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   margin: auto;
   max-width: 430px;
@@ -1076,12 +513,10 @@ input[type="radio"]:checked + .custom-control__indicator::before {
 }
 
 .modal--opened {
-  -webkit-animation: scale-up 0.5s ease-out;
   animation: scale-up 0.5s ease-out;
 }
 
 .modal--error {
-  -webkit-animation: shake 0.6s;
   animation: shake 0.6s;
 }
 
@@ -1099,7 +534,6 @@ input[type="radio"]:checked + .custom-control__indicator::before {
   text-indent: -1000px;
   cursor: pointer;
   background: none;
-  -webkit-transition: color 0.15s;
   transition: color 0.15s;
 }
 
@@ -1122,12 +556,10 @@ input[type="radio"]:checked + .custom-control__indicator::before {
 }
 
 .modal__close::before {
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 .modal__close::after {
-  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
@@ -1150,85 +582,39 @@ input[type="radio"]:checked + .custom-control__indicator::before {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-@-webkit-keyframes scale-up {
-  0% {
-    -webkit-transform: scale(0.2) translateY(-50%);
-    transform: scale(0.2) translateY(-50%);
-  }
-
-  55% {
-    -webkit-transform: scale(1.05) translateY(-50%);
-    transform: scale(1.05) translateY(-50%);
-  }
-
-  75% {
-    -webkit-transform: scale(0.95) translateY(-50%);
-    transform: scale(0.95) translateY(-50%);
-  }
-
-  100% {
-    -webkit-transform: scale(1) translateY(-50%);
-    transform: scale(1) translateY(-50%);
-  }
-}
-
 @keyframes scale-up {
-  0% {
-    -webkit-transform: scale(0.2) translateY(-50%);
+  0%{
     transform: scale(0.2) translateY(-50%);
   }
-
   55% {
-    -webkit-transform: scale(1.05) translateY(-50%);
     transform: scale(1.05) translateY(-50%);
   }
-
   75% {
-    -webkit-transform: scale(0.95) translateY(-50%);
     transform: scale(0.95) translateY(-50%);
   }
-
   100% {
-    -webkit-transform: scale(1) translateY(-50%);
     transform: scale(1) translateY(-50%);
-  }
-}
-
-@-webkit-keyframes shake {
-  0%, 100% {
-    -webkit-transform: translateX(0) translateY(-50%);
-    transform: translateX(0) translateY(-50%);
-  }
-
-  10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translateX(-10px) translateY(-50%);
-    transform: translateX(-10px) translateY(-50%);
-  }
-
-  20%, 40%, 60%, 80% {
-    -webkit-transform: translateX(10px) translateY(-50%);
-    transform: translateX(10px) translateY(-50%);
   }
 }
 
 @keyframes shake {
   0%, 100% {
-    -webkit-transform: translateX(0) translateY(-50%);
     transform: translateX(0) translateY(-50%);
   }
-
   10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translateX(-10px) translateY(-50%);
     transform: translateX(-10px) translateY(-50%);
   }
-
   20%, 40%, 60%, 80% {
-    -webkit-transform: translateX(10px) translateY(-50%);
     transform: translateX(10px) translateY(-50%);
   }
 }
 
 /*=====  End of Modal  ======*/
+
+
+
+
+
 
 /*============================
 =            Grid            =
@@ -1270,6 +656,10 @@ input[type="radio"]:checked + .custom-control__indicator::before {
 
 /*=====  End of Grid  ======*/
 
+
+
+
+
 /*===================================
 =            Main header            =
 ===================================*/
@@ -1277,15 +667,9 @@ input[type="radio"]:checked + .custom-control__indicator::before {
 .main-header {
   padding-top: 10px;
   margin-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   position: relative;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1329,24 +713,21 @@ input[type="radio"]:checked + .custom-control__indicator::before {
 
 /*=====  End of Main header  ======*/
 
+
+
+
+
 /*=======================================
 =            Main navigation            =
 =======================================*/
 
 .main-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .main-navigation > ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
@@ -1372,7 +753,6 @@ input[type="radio"]:checked + .custom-control__indicator::before {
   border-radius: inherit;
   font-weight: bold;
   color: #ffffff;
-  -webkit-transition: background-color 0.15s, color 0.15s, box-shadow 0.15s;
   transition: background-color 0.15s, color 0.15s, box-shadow 0.15s;
   outline: none;
 }
@@ -1418,19 +798,14 @@ input[type="radio"]:checked + .custom-control__indicator::before {
 }
 
 .main-navigation__link:focus + .submenu {
-  -webkit-transform: none;
   transform: none;
   opacity: 1;
   visibility: visible;
-  -webkit-transition: opacity 0.2s, visibility 0s, -webkit-transform 0.2s;
-  transition: opacity 0.2s, visibility 0s, -webkit-transform 0.2s;
   transition: transform 0.2s, opacity 0.2s, visibility 0s;
-  transition: transform 0.2s, opacity 0.2s, visibility 0s, -webkit-transform 0.2s;
 }
 
 .submenu__link {
   padding: 6px 20px;
-  -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
 
@@ -1474,18 +849,17 @@ input[type="radio"]:checked + .custom-control__indicator::before {
 
 /*=====  End of Main navigation  ======*/
 
+
+
+
+
 /*========================================
 =            Dashboard header            =
 ========================================*/
 
 .dashboard-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1517,7 +891,6 @@ input[type="radio"]:checked + .custom-control__indicator::before {
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.2);
   outline: none;
-  -webkit-transition: background-color 0.2s, color 0.2s;
   transition: background-color 0.2s, color 0.2s;
   cursor: default;
 }
@@ -1538,6 +911,10 @@ input[type="radio"]:checked + .custom-control__indicator::before {
   height: 16px;
 }
 
+.trigger-login {
+
+}
+
 .trigger-login .icon,
 .trigger-cart .icon {
   width: 20px;
@@ -1545,10 +922,13 @@ input[type="radio"]:checked + .custom-control__indicator::before {
   margin-right: 5px;
 }
 
+.trigger-cart {
+
+}
+
 .trigger-cart .icon {
   color: transparent;
   fill: #ffffff;
-  -webkit-transition: fill 0.18s;
   transition: fill 0.18s;
 }
 
@@ -1570,9 +950,17 @@ input[type="radio"]:checked + .custom-control__indicator::before {
 
 /*=====  End of Dashboard header  ======*/
 
+
+
+
+
 /*===================================
 =            Search form            =
 ===================================*/
+
+.search-form {
+
+}
 
 .search-form input[type="search"] {
   min-width: 310px;
@@ -1580,9 +968,16 @@ input[type="radio"]:checked + .custom-control__indicator::before {
 
 /*=====  End of Search form  ======*/
 
+
+
+
 /*==================================
 =            Login form            =
 ==================================*/
+
+.login-form {
+
+}
 
 .login-form input[type="email"],
 .login-form input[type="password"] {
@@ -1607,8 +1002,6 @@ input[type="radio"]:checked + .custom-control__indicator::before {
 }
 
 .login-form__footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 13px;
 }
@@ -1617,11 +1010,23 @@ input[type="radio"]:checked + .custom-control__indicator::before {
   margin-right: 20px;
 }
 
+.login-form__column-right {
+
+}
+
 /*=====  End of Login form  ======*/
+
+
+
+
 
 /*=====================================
 =            Feedback form            =
 =====================================*/
+
+.feedback-form {
+
+}
 
 .feedback-form::after {
   content: "";
@@ -1646,6 +1051,10 @@ input[type="radio"]:checked + .custom-control__indicator::before {
 
 /*=====  End of Feedback form  ======*/
 
+
+
+
+
 /*==============================
 =            Slider            =
 ==============================*/
@@ -1657,16 +1066,15 @@ input[type="radio"]:checked + .custom-control__indicator::before {
 .site-wrapper {
   background-repeat: no-repeat;
   background-position: 50% 0;
-  -webkit-transition: background-image 0.45s, background-color 0.45s 0.05s;
   transition: background-image 0.45s, background-color 0.45s 0.05s;
 }
 
 .site-wrapper::before {
   content: "";
-  visibility: hidden;
+  visibility: hidden;;
   background-image: url("../img/slider/slide-01.png"),
-  url("../img/slider/slide-02.png"),
-  url("../img/slider/slide-03.png");
+                    url("../img/slider/slide-02.png"),
+                    url("../img/slider/slide-03.png");
 }
 
 input[id="slide-1"]:checked ~ .site-wrapper {
@@ -1718,19 +1126,16 @@ input[id="slide-3"]:checked ~ .site-wrapper .slide:nth-child(3) {
   padding-right: 40px;
   text-shadow: 0 2px 2px rgba(160, 32, 11, 0.76);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-  background: -webkit-linear-gradient(top, #f26843, #e74a35);
   background: linear-gradient(to bottom, #f26843, #e74a35);
 }
 
 .slide .button:hover,
 .slide .button:focus {
-  background: -webkit-linear-gradient(top, #f58669, #ec6f5e);
   background: linear-gradient(to bottom, #f58669, #ec6f5e);
   box-shadow: 0 2px 2px #ac1000;
 }
 
 .slide .button:active {
-  background: -webkit-linear-gradient(top, #d74632, #e1613e);
   background: linear-gradient(to bottom, #d74632, #e1613e);
   box-shadow: inset 0 2px 2px #942718;
 }
@@ -1757,7 +1162,6 @@ input[id="slide-3"]:checked ~ .site-wrapper .slide:nth-child(3) {
   border-radius: 50%;
   cursor: pointer;
   text-indent: -1000px;
-  -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
 
@@ -1773,6 +1177,10 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 }
 
 /*=====  End of Slider  ======*/
+
+
+
+
 
 /*===================================
 =            Breadcrumbs            =
@@ -1813,7 +1221,6 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
   vertical-align: middle;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   text-decoration: none;
-  -webkit-transition: border-bottom-color 0.18s, color 0.18s;
   transition: border-bottom-color 0.18s, color 0.18s;
   outline: none;
 }
@@ -1826,19 +1233,17 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 
 /*=====  End of Breadcrumbs  ======*/
 
+
+
+
+
 /*==================================
 =            Pagination            =
 ==================================*/
 
 .pagination {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   text-align: right;
   font-weight: 500;
@@ -1853,7 +1258,6 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-  -webkit-transition: color 0.2s, background-color 0.2s;
   transition: color 0.2s, background-color 0.2s;
 }
 
@@ -1907,6 +1311,11 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 
 /*=====  End of Pagination  ======*/
 
+
+
+
+
+
 /*=====================================
 =            Products grid            =
 =====================================*/
@@ -1919,6 +1328,9 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 }
 
 /*=====  End of Products grid  ======*/
+
+
+
 
 /*===============================
 =            Product            =
@@ -1936,14 +1348,12 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
   border-radius: 5px;
   text-align: center;
   z-index: 0;
-  -webkit-transition: background-color 0.2s, z-index 0s 0.1s;
   transition: background-color 0.2s, z-index 0s 0.1s;
 }
 
 .product:hover {
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.3);
-  -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
 
@@ -1951,7 +1361,6 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
   margin-top: 20px;
   opacity: 0;
   color: #ffffff;
-  -webkit-transition: opacity 0.2s, background-color 0.2s;
   transition: opacity 0.2s, background-color 0.2s;
 }
 
@@ -2004,7 +1413,7 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
   width: 61px;
   height: 61px;
   font-size: 0;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 50%;
   text-indent: -1000px;
   overflow: hidden;
@@ -2030,7 +1439,6 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 
 .product__name span {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  -webkit-transition: border-bottom-color 0.18s, color 0.18s;
   transition: border-bottom-color 0.18s, color 0.18s;
 }
 
@@ -2039,6 +1447,10 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 }
 
 /*=====  End of Product  ======*/
+
+
+
+
 
 /*=============================
 =            Promo            =
@@ -2059,6 +1471,7 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 .promo--jam {
   background-color: #6d2836;
   background-image: url("../img/bg-promo-jam.jpg");
+
 }
 
 .promo--chocolate {
@@ -2084,6 +1497,10 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 
 /*=====  End of Promo  ======*/
 
+
+
+
+
 /*============================
 =            Hits            =
 ============================*/
@@ -2094,6 +1511,10 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 }
 
 /*=====  End of Hits  ======*/
+
+
+
+
 
 /*================================
 =            Features            =
@@ -2147,6 +1568,10 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 
 /*=====  End of Features  ======*/
 
+
+
+
+
 /*====================================
 =            News preview            =
 ====================================*/
@@ -2157,7 +1582,7 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
   box-sizing: border-box;
   color: #353535;
   border-radius: 10px;
-  background: #ffffff url("../img/bg-news-preview.jpg") no-repeat 100% 50%;
+  background: #fff url("../img/bg-news-preview.jpg") no-repeat 100% 50%;
   background-size: cover;
 }
 
@@ -2178,13 +1603,11 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 }
 
 .news-preview a {
-  padding-top: 1px;
+  padding-top: 1px ;
   padding-bottom: 1px;
   padding-right: 10px;
-  -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
   background-color: rgba(255, 255, 255, 0.8);
-  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
@@ -2195,6 +1618,10 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 
 /*=====  End of News preview  ======*/
 
+
+
+
+
 /*=================================
 =            Subscribe            =
 =================================*/
@@ -2203,7 +1630,7 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
   padding: 5px;
   border-radius: 10px;
   color: #5a5a5a;
-  background: #ffffff url("../img/bg-pattern-strip.png");
+  background: #fff url("../img/bg-pattern-strip.png");
 }
 
 .subscribe__inner {
@@ -2225,15 +1652,11 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
   left: 20px;
   right: 20px;
   bottom: 35px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .subscribe-form .floating-label {
   display: block;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   margin-right: 11px;
   font-size: 16px;
@@ -2244,6 +1667,10 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 }
 
 /*=====  End of Subscribe  ======*/
+
+
+
+
 
 /*================================
 =            Contacts            =
@@ -2302,6 +1729,10 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 
 /*=====  End of Contacts  ======*/
 
+
+
+
+
 /*===================================
 =            Filter form            =
 ===================================*/
@@ -2343,6 +1774,7 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
   max-width: 695px;
 }
 
+
 .filter-form legend {
   margin-bottom: 10px;
   margin-left: 16px;
@@ -2366,11 +1798,10 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  box-shadow: inset 0 0 0 2px #ffffff;
+  box-shadow: inset 0 0 0px 2px #fff;
   background-image: none;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
-  -webkit-transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
   transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
 }
 
@@ -2388,9 +1819,17 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 
 /*=====  End of Filter form  ======*/
 
+
+
+
+
 /*============================
 =            Cart            =
 ============================*/
+
+.cart {
+
+}
 
 .cart::after {
   content: "";
@@ -2435,7 +1874,6 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
   font-size: 0;
   text-indent: -1000px;
   cursor: pointer;
-  -webkit-transition: color 0.15s;
   transition: color 0.15s;
   color: #353535;
 }
@@ -2459,12 +1897,10 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 }
 
 .cart-product__delete::before {
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 .cart-product__delete::after {
-  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
@@ -2474,6 +1910,10 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
   height: 33px;
   border-radius: 50%;
   background-color: #616161;
+}
+
+.cart-product__image-wrapper img {
+
 }
 
 .cart-product__name {
@@ -2493,6 +1933,12 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 }
 
 /*=====  End of Cart  ======*/
+
+
+
+
+
+
 
 /*===================================
 =            Main footer            =
@@ -2537,7 +1983,6 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
   height: 31px;
   border: 3px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
-  -webkit-transition: border-color 0.2s;
   transition: border-color 0.2s;
 }
 
@@ -2556,7 +2001,6 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
   outline: none;
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-transition: opacity 0.15s, box-shadow 0.15s;
   transition: opacity 0.15s, box-shadow 0.15s;
 }
 
@@ -2616,7 +2060,6 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 .developer-footer p a {
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  -webkit-transition: border-bottom-color 0.18s, color 0.18s;
   transition: border-bottom-color 0.18s, color 0.18s;
 }
 

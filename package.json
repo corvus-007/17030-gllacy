@@ -1,0 +1,19 @@
+{
+  "name": "17030-gllacy",
+  "version": "1.0.0",
+  "description": "* Студент: [Денис Васильев](https://up.htmlacademy.ru/htmlcss/14/user/17030).\r * Наставник: [Максим Фарига](https://htmlacademy.ru/profile/id6090).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corvus-007/17030-gllacy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/corvus-007/17030-gllacy/issues"
+  },
+  "homepage": "https://github.com/corvus-007/17030-gllacy#readme"
+}
