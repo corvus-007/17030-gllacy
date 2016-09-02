@@ -7,10 +7,6 @@ var btnOpenModal = document.querySelector('.js-open-modal'),
     feedbackEmail = feedbackForm.querySelector('[name=email]'),
     feedbackMessage = feedbackForm.querySelector('[name=message]'),
     storageFeedbackName = localStorage.getItem('feedbackName'),
-    btnTriggerSearch = document.querySelector('.trigger-search'),
-    searchField = document.querySelector('.search-form [type="search"]'),
-    btnTriggerLogin = document.querySelector('.trigger-login'),
-    loginEmailField = document.querySelector('.login-form [name="email"]'),
     map,
     mapMarker;
 
