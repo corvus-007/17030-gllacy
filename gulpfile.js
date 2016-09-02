@@ -26,15 +26,15 @@ gulp.task('css', function() {
 
 gulp.task('compress-js', function(cb) {
   pump([
-          gulp.src(['js/script.js', 'js/modal.js', 'js/map.js']),
-          uglify({
-            mangle: true
-          }),
-          rename({suffix: '.min'}),
-          gulp.dest('js/')
-      ],
-      cb
-    );
+    gulp.src('js/script.js'),
+    uglify({
+      mangle: true
+    }),
+    rename({suffix: '.min'}),
+    gulp.dest('js/')
+    ],
+    cb
+  );
 });
 
 gulp.task('watch-project', ['css', 'compress-js'], function() {

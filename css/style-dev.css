@@ -115,6 +115,7 @@ img {
 
 .button {
   display: inline-block;
+  vertical-align: middle;
   padding: 10px 20px;
   font-size: 18px;
   line-height: 24px;
@@ -247,6 +248,19 @@ textarea {
   opacity: 0;
 }
 
+.floating-label input:focus + .label-text,
+.floating-label textarea:focus + .label-text,
+.floating-label input:valid + .label-text,
+.floating-label textarea:valid + .label-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.floating-label input:focus + .label-text,
+.floating-label textarea:focus + .label-text {
+  color: #5b9ddf;
+}
+
 .floating-label .label-text {
   position: absolute;
   bottom: 100%;
@@ -275,6 +289,7 @@ textarea {
 
 .custom-control {
   position: relative;
+  margin-left: 15px;
   font-weight: 500;
   cursor: pointer;
   user-select: none;
@@ -282,8 +297,17 @@ textarea {
   padding-left: 31px;
 }
 
-.custom-control + .custom-control {
-  margin-left: 15px;
+.custom-control:first-child {
+  margin-left: 0;
+}
+
+.form-section--filler .custom-control {
+  padding-left: 33px;
+  margin-left: 17px;
+}
+
+.form-section--filler .custom-control:first-child {
+  margin-left: 0;
 }
 
 .custom-control > input {
@@ -429,7 +453,7 @@ input[type="radio"]:checked + .custom-control__indicator::before {
 /* Custom range */
 
 .custom-range {
-  min-width: 190px;
+  min-width: 188px;
   padding-top: 8px;
   padding-bottom: 8px;
   position: relative;
@@ -1120,6 +1144,7 @@ input[id="slide-3"]:checked ~ .site-wrapper .slide:nth-child(3) {
 }
 
 .slide .button {
+  max-width: 250px;
   font-size: 32px;
   line-height: 44px;
   padding-left: 40px;
@@ -1142,6 +1167,7 @@ input[id="slide-3"]:checked ~ .site-wrapper .slide:nth-child(3) {
 
 .slider-controls {
   position: absolute;
+  max-width: 300px;
   bottom: 20px;
   margin: 0;
   padding: 0;
@@ -1187,6 +1213,7 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 ===================================*/
 
 .breadcrumbs {
+  max-width: 70%;
   margin-top: 0;
   margin-bottom: 8px;
   padding: 0;
@@ -1630,7 +1657,7 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
   padding: 5px;
   border-radius: 10px;
   color: #5a5a5a;
-  background: #fff url("../img/bg-pattern-strip.png");
+  background: #f8f7f4 url("../img/bg-pattern-strip.png");
 }
 
 .subscribe__inner {
@@ -1656,14 +1683,13 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 }
 
 .subscribe-form .floating-label {
-  display: block;
   flex: 1;
   margin-right: 11px;
   font-size: 16px;
 }
 
 .subscribe-form .button {
-  float: right;
+  max-width: 135px;
 }
 
 /*=====  End of Subscribe  ======*/
@@ -1771,9 +1797,8 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 }
 
 .filter-form .form-section--filler {
-  max-width: 695px;
+  max-width: 705px;
 }
-
 
 .filter-form legend {
   margin-bottom: 10px;
@@ -1794,6 +1819,7 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 }
 
 .filter-form .button {
+  max-width: 150px;
   padding: 9px 30px;
   font-size: 16px;
   line-height: 18px;
@@ -1828,7 +1854,7 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 ============================*/
 
 .cart {
-
+  max-width: 550px;
 }
 
 .cart::after {
@@ -2057,14 +2083,14 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
 }
 
 .navigation-footer a,
-.developer-footer p a {
+.developer-text a {
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   transition: border-bottom-color 0.18s, color 0.18s;
 }
 
 .navigation-footer a:hover,
-.developer-footer p a:hover {
+.developer-text a:hover {
   color: #ffbc9e;
   border-bottom-color: rgba(255, 188, 158, 0.3);
 }
@@ -2074,7 +2100,7 @@ input[id="slide-3"]:checked ~ .site-wrapper label[for="slide-3"] {
   position: relative;
 }
 
-.navigation-footer .special-item .icon {
+.navigation-footer .icon {
   position: absolute;
   right: 100%;
   margin-right: 7px;
