@@ -16,7 +16,7 @@
           </a>
           <ul>
             <li class="main-navigation__item main-navigation__item--active dropdown-trigger">
-              <a class="main-navigation__link"><span>Каталог</span></a>
+              <a class="main-navigation__link">Каталог</a>
               <ul class="submenu dropdown">
                 <li class="submenu__item submenu__item--special">
                   <a class="submenu__link" href="#">Новинки</a>
@@ -36,10 +36,10 @@
               </ul>
             </li>
             <li class="main-navigation__item">
-              <a class="main-navigation__link" href="#"><span>Доставка и оплата</span></a>
+              <a class="main-navigation__link" href="#">Доставка и оплата</a>
             </li>
             <li class="main-navigation__item">
-              <a class="main-navigation__link" href="#"><span>О компании</span></a>
+              <a class="main-navigation__link" href="#">О компании</a>
             </li>
           </ul>
         </nav>
@@ -160,8 +160,8 @@
 
       <form class="filter-form" action="/" method="GET">
         <div class="filter-form__row">
-          <fieldset class="filter-form__section filter-form__section--sort">
-            <legend>Сортировка:</legend>
+          <div class="filter-form__section filter-form__section--sort">
+            <span class="filter-form__section-title">Сортировка:</span>
             <div class="custom-select">
               <select name="sort">
                 <option value="popularity">по популярности</option>
@@ -170,9 +170,13 @@
                 <option value="fat">по жирности</option>
               </select>
             </div>
-          </fieldset>
+          </div>
           <fieldset class="filter-form__section filter-form__section--price">
-            <legend>Цена: <span class="filter-price-min">100</span> руб. – <span class="filter-price-max">500</span> руб.</legend>
+            <legend class="filter-form__section-title">
+              Цена
+              <input type="text" name="filter-price-min" value="100" readonly>руб. –
+              <input type="text" name="filter-price-max" value="500" readonly>руб.
+            </legend>
             <div class="filter-form__panel">
               <div class="custom-range">
                 <div class="custom-range__scale">
@@ -184,7 +188,7 @@
             </div>
           </fieldset>
           <fieldset class="filter-form__section filter-form__section--fat">
-            <legend>Жирность:</legend>
+            <legend class="filter-form__section-title">Жирность:</legend>
             <div class="filter-form__panel">
               <label class="custom-control">
                 <input type="radio" name="fat" value="0">
@@ -211,7 +215,7 @@
         </div>
         <div class="filter-form__row">
           <fieldset class="filter-form__section filter-form__section--filler">
-            <legend>Наполнители:</legend>
+            <legend class="filter-form__section-title">Наполнители:</legend>
             <div class="filter-form__panel">
               <label class="custom-control">
                 <input type="checkbox" name="filler" value="chocolate" checked>
